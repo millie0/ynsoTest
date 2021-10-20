@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.selection</title>
+    <link rel="stylesheet" href="../layout/0.header.css">
+    <link rel="stylesheet" href="../layout/0.common.css">
+    <link rel="stylesheet" href="./css/0.test_common.css">
+    <link rel="stylesheet" href="./css/1.selection.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- select2 -->
+    <link href="../select2/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header_import">
+    </header>
+    <div class="func-bar_top">
+    </div>
+    <main>
+        <div class="content_wrap">
+            <div class="white_wrap">
+                <div class="title_pri">選擇測驗</div>
+                <div class="switch-btn_group d-flex">
+                    <div class="btn_switch btn_switch_test btn_switch_active">選擇考卷</div>
+                    <div class="btn_switch btn_switch_filter btn_switch_disable">篩選考古題</div>
+                </div>
+                <!-- 選擇考卷 -->
+                <div id="select-test" class="select_input">
+                    <div class="select_group">
+                        <label class="label_form" for="">考卷<span class="star">*</span></label>
+                        <!-- <select class="select_select" name="證照" id="" placeholder="請選擇考卷">
+                                <option value="option_default" hidden disabled selected>請選擇考卷</option>
+                                <option value="">多益20200721_test1</option>
+                                <option value="">托福20190508_test2</option>
+                            </select> -->
+                        <div id="search_select_group" class="search-select_group d-flex">
+                            <select class="search-select" name="state">
+                                <option class="option_default" value="option_default">請選擇考卷</option>
+                                <!-- <option></option> -->
+                                <option value="多益_20180731_b">多益_20180731_b</option>
+                                <option value="多益_20220101_ab">多益_20220101_ab</option>
+                                <option value="多益_20261123_a">多益_20261123_a</option>
+                                <option value="托福_20261123_b">托福_20261123_b</option>
+                                <option value="托福_22550214_b">托福_22550214_b</option>
+                            </select>
+                            <img class="icon_search" src="../icon/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <!-- 篩選考古題 -->
+                <div id="filter-test" class="select_input">
+                    <div class="select_group">
+                        <label class="label_form" for="">證照<span class="star">*</span></label>
+                        <select class="select_select" name="證照" id="" placeholder="請選擇考卷">
+                            <option value="option_default" hidden>請選擇證照</option>
+                            <option value="toeic">多益</option>
+                            <option value="toefl">托福</option>
+                        </select>
+                    </div>
+                    <div class="select_group">
+                        <label class="label_form" for="">考試制度</label>
+                        <select class="select_select" name="制度" id="">
+                            <option value="option_default" hidden>請選擇證照</option>
+                            <option value="">2018新制</option>
+                            <option value="">2006改二制</option>
+                        </select>
+                    </div>
+                    <div class="select_group">
+                        <label class="label_form" for="">考古題日期<span class="star">*</span></label>
+                        <!-- <input class="time_input" id="date" type="date"> -->
+                        <div class="test-time-group">
+                            <select id="select_year" class="select_select_time" name="年分" id="">
+                                <option value="option_default" hidden>年分</option>
+                                <option value="1979">1979</option>
+                                <option value="2021">2021</option>
+                            </select>
+                            <span class="time_text">年</span>
+                            <select id="select_month" class="select_select_time" name="月分" id="">
+                                <option value="option_default" hidden>月分</option>
+                                <option value="">1</option>
+                                <option value="">12</option>
+                            </select>
+                            <span class="time_text">月</span>
+                            <select id="select_day" class="select_select_time" name="日期" id="">
+                                <option value="option_default" hidden>日期</option>
+                                <option value="">1</option>
+                                <option value="">31</option>
+                            </select>
+                            <span class="time_text">日</span>
+                        </div>
+                    </div>
+                    <div class="select_group">
+                        <label class="label_form" for="">AB卷</label>
+                        <select class="select_select" name="AB卷" id="">
+                            <option value="" hidden>請選擇AB卷</option>
+                            <option value="">A卷</option>
+                            <option value="">B卷</option>
+                        </select>
+                    </div>
+                    <div class="select_group">
+                        <label class="label_form" for="">考試名稱</label>
+                        <div class="input_group d-flex">
+                            <input class="input_select" type="text">
+                            <img class="icon_search" src="../icon/search.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <a class="btn btn_pri" href="./2.test_info.html">下一步</a>
+            </div>
+            <div class="ad_section">
+                <div class="ad_72890">
+                    <img class="ad_pic_72890" src="../img/ads_72890.jpeg" alt="">
+                </div>
+                <div class="ad_300100">
+                    <img class="ad_pic_300100" src="../img/ads_300100.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <!-- jq CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- select2 -->
+    <script src="../select2/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.search-select').select2({
+                placeholder: {
+                    id: '-1', // the value of the option
+                    text: 'Select an option'
+                },
+                templateSelection: function (data) {
+                    if (data.id === '') { // adjust for custom placeholder values
+                        return '請選擇考卷';
+                    }
+                    return data.text;
+                },
+            });
+        });
+    </script>
+
+    <script src="../layout/0.common.js"></script>
+    <script src="../layout/0.header.js"></script>
+    <script src="./js/1.selection.js"></script>
+</body>
+
+</html>

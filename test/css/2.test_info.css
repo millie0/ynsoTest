@@ -1,0 +1,29 @@
+body {
+	min-height: 100vh;
+	background: url('../../img/bg_green.jpg') no-repeat center center transparent;
+	background-size: cover;
+}
+
+.btn_sec,
+.btn_pri {
+	margin: 0 10px;
+}
+.btn_group {
+	display: flex;
+	margin-top: 28px;
+}
+
+/* RWD 768 */
+
+@media screen and (max-width: 768px) {
+	.white_wrap {
+		width: 320px;
+	}
+	.btn_group {
+		display: block;
+	}
+
+	.btn_group .btn {
+		margin: 10px 0;
+	}
+}

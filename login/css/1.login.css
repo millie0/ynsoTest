@@ -1,0 +1,169 @@
+html,
+body {
+	height: 100%;
+}
+.login-bg {
+	margin: 0;
+	padding: 0;
+}
+@media screen and (min-height: 950px) {
+	.login_bg_test {
+		min-height: 100vh;
+	}
+}
+@media screen and (max-height: 950px) {
+	.login_bg_test {
+		min-height: 950px;
+	}
+}
+.login_bg_test {
+	width: 100vw;
+	object-fit: cover;
+	object-position: left top;
+	margin-bottom: -10px;
+}
+.login-signup_bg {
+	width: 380px;
+	background-color: #fff;
+	border-radius: 20px;
+	position: absolute;
+	top: 80px;
+	right: 140px;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+.login_section,
+.signup_section,
+.forgetpw_section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+/* 登入隱藏->切換成註冊 */
+/* .login_section {
+	display: none;
+} */
+/* 註冊隱藏->切換成登入 */
+/* .signup_section {
+	display: none;
+} */
+
+.login_input,
+.signup_input {
+	margin-bottom: 22px;
+}
+
+.input_login,
+.input_signup {
+	display: block;
+	width: 250px;
+	height: 32px;
+	margin-bottom: 14px;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.select_place {
+	width: 100%;
+	background: url(../../icon/tri-green.svg) no-repeat 97% center transparent;
+}
+.input_password {
+	/* background: url(../../icon/eye.svg) no-repeat 98% center transparent; */
+	padding-right: 36px;
+}
+.input_login {
+	margin: 0 auto 14px;
+}
+.pass_group {
+	margin-right: -22px;
+}
+.icon_eye {
+	position: relative;
+	right: 40px;
+	width: 22px;
+	height: 22px;
+	top: 6px;
+	cursor: pointer;
+}
+.signup_section .icon_eye {
+	right: 30px;
+}
+/* form input */
+::placeholder {
+	color: #738056;
+	font-size: 16px;
+}
+.forget {
+	display: inline-block;
+	margin: 6px auto 0;
+	font-size: 16px;
+	color: #738056;
+}
+.switch {
+	margin-top: 40px;
+}
+.switch_text {
+	color: #4c4e47;
+	font-size: 14px;
+}
+.switch_signup,
+.switch_login {
+	font-weight: 500;
+	color: #afbe80;
+	margin-left: 6px;
+	cursor: pointer;
+}
+.re-sent_count {
+	color: #c4c4c4;
+}
+.label_form {
+	display: block;
+	font-size: 14px;
+	color: #738056;
+	margin-bottom: 4px;
+}
+.term_signup {
+	display: flex;
+	width: 75%;
+	margin: 10px auto;
+}
+.term_content {
+	color: #4c4e47;
+	font-size: 14px;
+	margin-left: 10px;
+}
+.to_login_signup {
+	justify-content: center;
+	margin-bottom: 10px;
+}
+.alert_login {
+	width: 60%;
+	margin: 0 auto;
+}
+.btn_pri {
+	margin-top: 20px;
+}
+/* RWD 1800 */
+
+@media screen and (min-width: 1800px) {
+	.login-signup_bg {
+		width: 500px;
+		right: 250px;
+	}
+}
+
+/* RWD 1024 */
+@media screen and (max-width: 1024px) {
+	.login-signup_bg {
+		right: calc(50% - 190px);
+	}
+}
+
+/* RWD 350 */
+@media screen and (max-width: 350px) {
+	.login-signup_bg {
+		width: 310px;
+		right: calc(50% - 155px);
+		padding: 10px 0;
+	}
+}

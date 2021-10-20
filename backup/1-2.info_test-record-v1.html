@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.member-info</title>
+    <link rel="stylesheet" href="../layout/0.header.css">
+    <link rel="stylesheet" href="../layout/0.common.css">
+    <link rel="stylesheet" href="../member/css/0.member-common.css">
+    <link rel="stylesheet" href="./1-2.info_test-record-v1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!-- select2 -->
+    <link href="../select2/select2.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header class="header_import">
+    </header>
+    <main>
+        <div class="content_wrap">
+            <div class="white_wrap_member">
+                <div class="member_menu">
+                    <div class="title_menu">會員中心</div>
+                    <ul class="menu_ul">
+                        <li id="menu_info" class="menu_list menu_list--active">會員資料</li>
+                        <li id="menu_record" class="menu_list">考試紀錄</li>
+                        <!-- <li id="menu_record" class="menu_list">訂閱紀錄</li>
+                        <li id="menu_record" class="menu_list">收藏清單</li>
+                        <li id="menu_record" class="menu_list">隱私權設定</li> -->
+                    </ul>
+                </div>
+                <!-- 切換內容 -->
+                <div class="member_content_wrap">
+                    <!-- 1.會員資料與修改密碼 -->
+                    <div id="section_info" class="member_content">
+                        <div class="title_member">
+                            會員資料與修改密碼
+                        </div>
+                        <ul class="member-content">
+                            <li class="member-content_li">
+                                <p class="member-content-title">姓名</p>
+                                <p class="member-content-text">黃大海</p>
+                            </li>
+                            <li class="member-content_li">
+                                <p class="member-content-title">電子郵件</p>
+                                <p class="member-content-text">4099@tkb.com.tw</p>
+                            </li>
+                            <li class="member-content_li">
+                                <p class="member-content-title">行動電話</p>
+                                <p class="member-content-text">0987654321</p>
+                            </li>
+                            <li class="member-content_li member-content_li_pw">
+                                <p class="member-content-title">密碼</p>
+                                <p class="member-content-text">***************</p>
+                                <div class="icon_edit">
+                                    <img src="../icon/btn_edit.png" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                        <!-- 修改密碼 -->
+                        <div class="set_pw hidden">
+                            <ul class="set_pw_ul">
+                                <li class="member-content_li">
+                                    <p class="member-content-title">輸入舊密碼</p>
+                                    <div class="pass_group d-flex">
+                                        <input class="input_member input_password" type="password" placeholder="請輸入舊密碼">
+                                        <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                                    </div>
+                                </li>
+                                <li class="member-content_li">
+                                    <p class="member-content-title">設定新密碼</p>
+                                    <div class="pass_group d-flex">
+                                        <input class="input_member input_password" type="password" placeholder="請設定新密碼">
+                                        <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                                    </div>
+                                </li>
+                                <li class="member-content_li">
+                                    <p class="member-content-title">確認新密碼</p>
+                                    <div class="pass_group d-flex">
+                                        <input class="input_member input_password alert_input" type="password"
+                                            placeholder="請確認新密碼">
+                                        <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                                    </div>
+                                </li>
+                            </ul>
+                            <p class="alert_login">
+                                請輸入與舊密碼不同的密碼
+                            </p>
+
+                            <div class="btn-group">
+                                <div class="btn btn_sec">取消</div>
+                                <div id="btn_save" class="btn btn_pri">確認修改</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- 2.考試紀錄 -->
+                    <div id="section_record" class="member_content hidden">
+                        <div class="title_member">
+                            考試紀錄 ( 36 )
+                        </div>
+                        <section class="test_record_form">
+                            <div class="form_title_row">
+                                <div class="title_main d-flex">
+                                    <p class="form_title form_title_date">日期</p>
+                                    <p class="form_title form_title_name">考試名稱</p>
+                                </div>
+                                <div class="title_score d-flex">
+                                    <p class="form_title">對/錯</p>
+                                    <p class="form_title">聽力</p>
+                                    <p class="form_title">閱讀</p>
+                                    <p class="form_title">總分</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益多益多益多益多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益多益多益多益多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                            <div class="test_record_card">
+                                <div class="content_main d-flex">
+                                    <p class="form_content form_content_date">3/15</p>
+                                    <p class="form_content form_content_name">多益_2019新制_2020-12-03_A卷</p>
+                                </div>
+                                <div class="content_score d-flex">
+                                    <p class="form_content">58/42</p>
+                                    <p class="form_content">480</p>
+                                    <p class="form_content">350</p>
+                                    <p class="form_content">830</p>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="page-number-sec">
+                            <div class="page-number arr-2l"><img src="../icon/arr-l-db.png" alt=""></div>
+                            <!-- <div class="page-number arr-1l"><img src="../icon/arr-1l-g.png" alt=""></div> -->
+                            <div class="page-number p-n--active">1</div>
+                            <div class="page-number"><a href="./2.test-record_empty.html">2</a></div>
+                            <div class="page-number">3</div>
+                            <!-- <div class="page-number arr-2r"><img src="../icon/arr-1r-g.png" alt=""></div> -->
+                            <div class="page-number arr-1r"><img src="../icon/arr-r-db.png" alt=""></div>
+                        </section>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <section class="modal_finish hidden">
+        <svg id="circle" height="80" width="80">
+            <circle class="circle" cx="40" cy="40" r="35" stroke="#738056" stroke-width="5" fill-opacity="0" />
+        </svg>
+        <div class="icon_finish">
+            <img src="../icon/finish_green.svg" alt="">
+        </div>
+        <p class="finish_text">修改完成</p>
+    </section>
+
+
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <!-- jq CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    </script>
+
+    <script src="../layout/0.common.js"></script>
+    <script src="../layout/0.header.js"></script>
+    <script src="../member/js/0.member_common.js"></script>
+    <script src="../member/js/1.member-info.js"></script>
+</body>
+
+</html>

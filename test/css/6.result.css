@@ -1,0 +1,139 @@
+/* 測驗結果 */
+.certificate {
+	width: 750px;
+	height: 500px;
+	background: url('../../img/toeic_certificate-n.png') no-repeat center center;
+	background-size: contain;
+	padding: 80px 50px;
+	box-sizing: border-box;
+	color: #4c4e47;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.certificate:before {
+	display: none;
+	content: '';
+	position: absolute;
+	width: 150%;
+	height: 110%;
+	z-index: -1;
+	top: -18px;
+	left: -174px;
+	background: url(../../img/toeic_certificate-n.png) 0 0 no-repeat;
+	background-size: contain;
+	transform: rotate(90deg);
+}
+.toeic,
+.practice-test {
+	margin-right: 10px;
+}
+.test_subject {
+	font-size: 14px;
+	text-align: center;
+}
+.test_result {
+	margin: 14px 0;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+.translation_section p {
+	font-family: 'Rochester', sans-serif;
+	text-align: center;
+}
+
+.part-score_group {
+	margin-bottom: 2px;
+}
+.test_score {
+	width: 400px;
+	height: 160px;
+	background: url('../../img/toeic_certificate_frame.png') center center no-repeat;
+	background-size: contain;
+	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 0;
+	box-sizing: border-box;
+}
+.ur-score {
+	width: 80px;
+	font-size: 12px;
+	color: #c4c4c4;
+	border-bottom: 1px solid #d4d4d4;
+	text-align: center;
+	padding-bottom: 4px;
+	margin-bottom: 6px;
+}
+/* table */
+table {
+	border: none;
+}
+table td {
+	font-size: 12px;
+	width: 80px;
+	text-align: center;
+}
+tbody tr {
+	height: 22px;
+}
+/* RWD 768 */
+
+@media screen and (max-width: 768px) {
+	/* 測驗結果 certificate */
+	.certificate {
+		width: 500px;
+		height: 320px;
+		padding: 36px 50px;
+	}
+	.test_subject {
+		font-size: 12px;
+	}
+	.test_result {
+		margin: 8px 0;
+		font-size: 14px;
+	}
+	.test_score {
+		margin-top: 0;
+		width: 245px;
+	}
+	.ur-score {
+		padding-bottom: 0;
+	}
+	/* table */
+	table td:first-child {
+		width: 80px;
+	}
+	table td,
+	.ur-score {
+		width: 60px;
+	}
+}
+/* RWD 550 */
+
+@media screen and (max-width: 550px) {
+	/* 測驗結果 certificate */
+	.content_wrap_result {
+		padding: 80px 0 20px;
+	}
+	.certificate {
+		position: relative;
+		width: 310px;
+		height: 450px;
+		padding: 50px 56px;
+		background: none;
+	}
+	.certificate:before {
+		display: block;
+	}
+	.toeic-practice-test {
+		display: block;
+	}
+	.test_score {
+		background: url('../../img/toeic_certificate_frame_375.png') center center no-repeat;
+		background-size: contain;
+		margin-top: 20px;
+	}
+}

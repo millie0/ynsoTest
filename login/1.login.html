@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.login</title>
+    <link rel="stylesheet" href="../layout/0.common.css">
+    <link rel="stylesheet" href="../layout/0.header.css">
+    <link rel="stylesheet" href="./css/1.login.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="login-bg">
+            <img class="login_bg_test" src="../img/toeic_login_final.jpg" alt="">
+            <div class="login-signup_bg">
+                <!-- 登入 -->
+                <div class="login_section d-none">
+                    <div class="title_pri">會員登入</div>
+                    <div class="login_input">
+                        <input class="input_login" type="text" placeholder="帳號">
+                        <div class="pass_group d-flex">
+                            <input class="input_login input_password alert_input" type="password" placeholder="密碼">
+                            <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                        </div>
+                        <!-- <div class="alert_login">帳號或密碼不正確</div> -->
+                        <div class="alert_login">無法登入，請確認帳號狀態或請洽客服人員為您服務</div>
+                    </div>
+                    <a class="btn btn_pri" href="../test/1.selection.html">登入</a>
+                    <div class="switch">
+                        <span>還沒有TKB會員嗎?</span>
+                        <span class="switch_signup">註冊</span>
+                    </div>
+                    <p href="" class="forget">忘記密碼</p>
+                    <div class="ad_section">
+                        <div class="ad_300250">
+                            <img src="../img/ads_300x250.jpeg" alt="" class="ad_pic_300250">
+                        </div>
+                    </div>
+                </div>
+                <!-- 註冊 -->
+                <div class="signup_section d-none">
+                    <div class="title_pri">會員註冊</div>
+                    <div class="signup_input">
+                        <label class="label_form" for="">真實姓名<span class="star">*</span></label>
+                        <input class="input_signup" type="text" placeholder="">
+                        <label class="label_form" for="">電子郵件<span class="star">*</span></label>
+                        <input class="input_signup alert_input" type="text" placeholder="">
+                        <label class="label_form" for="">密碼<span class="star">*</span></label>
+                        <div class="pass_group d-flex">
+                            <input class="input_login input_password" type="password">
+                            <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                        </div>
+                        <label class="label_form" for="">確認密碼<span class="star">*</span></label>
+                        <div class="pass_group d-flex">
+                            <input class="input_login input_password" type="password">
+                            <img class="icon_eye" src="../icon/eye-close.svg" alt="">
+                        </div>
+                        <label class="label_form" for="">行動電話<span class="star">*</span></label>
+                        <input class="input_signup" type="text" placeholder="">
+                        <label class="label_form" for="">所在地<span class="star">*</span></label>
+                        <select class="select_place" name="" id="">
+                            <option value="" hidden>請選擇所在地</option>
+                            <option value="">北區</option>
+                            <option value="">桃竹區</option>
+                            <option value="">中區</option>
+                            <option value="">嘉南區</option>
+                            <option value="">高屏區</option>
+                        </select>
+                        <!-- <label class="label_form" for="">生日<span class="star">*</span></label>
+                        <input class="input_signup" type="text" placeholder="">
+                        <label class="label_form" for="">性別<span class="star">*</span></label> -->
+                        <!-- <div class="d-flex">
+                            <div class="radio_group">
+                                <input id="radio_input_male" class="radio_input" type="radio" name="gender" hidden>
+                                <label class="radio_label" for="radio_input_male">
+                                    <span class="radio_button"></span>
+                                    <span>男</span>
+                                </label>
+                            </div>
+                            <div class="radio_group">
+                                <input id="radio_input_female" class="radio_input" type="radio" name="gender" hidden>
+                                <label class="radio_label" for="radio_input_female">
+                                    <span class="radio_button"></span>
+                                    <span>女</span>
+                                </label>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="alert_login">請輸入有效的電子郵件</div>
+                    <div id="btn_signup" class="btn btn_pri">註冊</div>
+                    <div class="switch">
+                        <span class="switch_text">已經有帳號了嗎?</span>
+                        <span class="switch_login">登入</span>
+                    </div>
+                    <div class="term_signup">
+                        <input type="checkbox">
+                        <label class="checkbox_label" for=""></label>
+                        <label class="term_content" for="">已閱讀且同意會員權利說明，並已
+                            瞭解個資法及隱私權相關規範。</label>
+                    </div>
+                </div>
+                <!-- 忘記密碼 -->
+                <div class="forgetpw_section">
+                    <div class="title_pri">忘記密碼</div>
+                    <p class="text-m">請輸入您的電子信箱，我們將發送密碼修改信給您。</p>
+                    <div class="login_input">
+                        <input class="input_login" type="text" placeholder="電子信箱">
+                        <div class="alert_login">電子信箱尚未註冊</div>
+                    </div>
+                    <div id="send_change-ps" class="btn btn_pri">發送密碼修改信</div>
+
+                    <div class="switch t-center">
+                        <div class="to_login_signup d-flex">
+                            <span class="switch_login">登入</span>
+                            <span class="switch_signup">註冊</span>
+                        </div>
+                        <div class="resent_wrap hidden">
+                            <span class="fz-m color-dg">沒有收到密碼修改信?</span>
+                            <p class="re-sent_count">於
+                                <span class="count_num">28</span>
+                                秒後重新發送
+                            </p>
+                        </div>
+                    </div>
+                    <div class="ad_section">
+                        <div class="ad_300250">
+                            <img src="../img/ads_300x250.jpeg" alt="" class="ad_pic_300250">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section>
+        <!-- 註冊成功 跳窗 -->
+        <div id="modal_signup_fin" class="modal_info hidden">
+            <div class="bg_mask"></div>
+            <div class="modal_window">
+                <div class="title_modal">註冊成功</div>
+                <p class="modal_text">請登入</p>
+
+                <div id="signup_fin" class="btn btn_pri">
+                    確定
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js"></script>
+    <!-- jq CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script src="../layout/0.common.js"></script>
+    <script src="./js/1.login.js"></script>
+</body>
+
+</html>

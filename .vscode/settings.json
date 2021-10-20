@@ -1,0 +1,18 @@
+{
+    "liveServer.settings.port": 5501,
+    "powermode.enabled": true,
+    "powermode.enableStatusBarComboTimer": false,
+    "powermode.enableShake": false,
+    "powermode.customExplosions": [
+"https://media0.giphy.com/media/j4quHz5WfPD10So6Wc/giphy.gif?cid=ecf05e47ji2thxr56eszau2yrbsokih17d6t28rcw986nbjb&rid=giphy.gif&ct=s"    ],  
+    "powermode.explosionOrder": "sequential",
+    "powermode.explosionSize":15,
+    "powermode.explosionFrequency": 2,
+    "powermode.maxExplosions": 1,
+    "powermode.explosionOffset": 0.35,
+    "powermode.gifMode": "continue",
+    "powermode.explosionDuration": 1000,
+    "powermode.backgroundMode": "image",
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+}

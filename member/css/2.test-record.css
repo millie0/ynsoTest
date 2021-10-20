@@ -1,0 +1,174 @@
+.member_content {
+	box-sizing: border-box;
+}
+.member_content_empty {
+	width: calc(100% - 180px);
+	box-sizing: border-box;
+}
+
+.test_record_table {
+	width: 100%;
+	border-collapse: collapse;
+}
+.title_table {
+	min-width: 65px;
+	font-family: 16px;
+	color: #738056;
+	white-space: nowrap;
+	font-weight: 400;
+	text-align: center;
+}
+.table_content_row {
+	height: 50px;
+	border: 0.5px solid #fff;
+	border-bottom: 1px solid #c4c4c4;
+	border-style: solid;
+	display: flex;
+}
+.table_content {
+	text-align: center;
+	font-size: 16px;
+}
+
+.title_table_name,
+.title_table_date,
+.table_content_date {
+	text-align: left;
+}
+.form_title_row {
+	display: flex;
+	justify-content: space-between;
+}
+.test_record_card {
+	display: flex;
+	height: 50px;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #c4c4c4;
+}
+.content_score .form_content {
+	color: #005478;
+}
+.form_title {
+	font-size: 16px;
+	color: #738056;
+	min-width: 65px;
+	text-align: center;
+	display: inline-block;
+	box-sizing: border-box;
+}
+.form_content {
+	min-width: 65px;
+	text-align: center;
+}
+.form_title_name {
+	width: 50%;
+	text-align: left;
+}
+.form_content_name {
+	max-width: 380px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-weight: 500;
+}
+.form_title_date,
+.form_content_date {
+	text-align: left;
+	padding-left: 10px;
+}
+.form_content_date {
+	font-weight: 500;
+	width: 50px;
+}
+
+.img_flower {
+	width: 36px;
+	margin: 0 auto;
+}
+.empty_group {
+	text-align: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top: 50px;
+}
+/* RWD 1024 */
+@media screen and (max-width: 1024px) {
+	.form_title_row {
+		display: none;
+	}
+	.test_record_card {
+		display: block;
+		height: 54px;
+	}
+	.content_main {
+		margin: 6px 0;
+	}
+	.form_content {
+		padding: 0 10px;
+		box-sizing: border-box;
+		white-space: nowrap;
+		min-width: 80px;
+		font-size: 14px;
+	}
+	.form_content_date {
+		min-width: 50px;
+	}
+	.content_score .form_content:nth-of-type(1):before {
+		content: '對/錯:';
+		color: #738056;
+		font-weight: 400;
+		margin-right: 6px;
+	}
+	.content_score .form_content:nth-of-type(2):before {
+		content: '聽力:';
+		color: #738056;
+		font-weight: 400;
+		margin-right: 6px;
+	}
+	.content_score .form_content:nth-of-type(3):before {
+		content: '閱讀:';
+		color: #738056;
+		font-weight: 400;
+		margin-right: 6px;
+	}
+	.content_score .form_content:nth-of-type(4):before {
+		content: '總分:';
+		color: #738056;
+		font-weight: 400;
+		margin-right: 6px;
+	}
+}
+
+/* RWD 768 */
+@media screen and (max-width: 768px) {
+	.member_content {
+		width: 100%;
+	}
+}
+/* RWD 550 */
+@media screen and (max-width: 550px) {
+	.member_content {
+		width: 100%;
+	}
+	.content_score {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.test_record_card {
+		height: auto;
+		padding: 10px 0 15px;
+	}
+	.form_content {
+		margin-bottom: 4px;
+		/* padding: 0; */
+	}
+	.content_main {
+		display: block;
+	}
+	.form_content_name {
+		text-align: start;
+		white-space: normal;
+	}
+}
